@@ -136,7 +136,42 @@ body{
 .name-social{
     font-weight: 700;
 }
+
+/* PRESENTATION */
+
+.presentation{
+    margin-top: 45px;
+}
+
+.title-section{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.title-section::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: var(--light-orange);
+    margin-top: 20px;
+}
+
+.presentation img{
+    float: left;
+    padding-right: 15px;   
+}
+
+.secondary-layout {
+    margin-top: 40px;
+}
+
+.description{
+    line-height: 35px;
+    font-size: 18px;
     
+}
+
 
 
 /* MEDIA QUERIES */
@@ -253,5 +288,17 @@ body{
         display: none;
     }
 
+    /* PRESENTATION */
 
+    .presentation img{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: 300px;
+    }
+
+    .title-section::after{
+        width: 100px;
+    }
 }
